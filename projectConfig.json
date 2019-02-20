@@ -1,0 +1,16 @@
+{
+  "path": {
+    "src": "./src/",
+    "dist": "./build/"
+  },
+  "assets": {
+    "addJs": [
+      "./node_modules/jquery/dist/jquery.min.js",
+      "./node_modules/popper.js/dist/umd/popper.min.js"
+
+    ],
+    "addCss": [
+      "./node_modules/normalize.css/normalize.css"
+    ]
+  }
+}
