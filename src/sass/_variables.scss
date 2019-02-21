@@ -1,23 +1,27 @@
 //  Main Color
 $body-bg: #fff;
-$text-color: #333;
+$text-color: #333333;
+$second-color: #666666;
+$border-main-color: #666666;
+$border-second-color: #781241;
 
 // Color link
 $link-color: #ffffff;
 
 
 //  Typography
-$font-family: 'CormorantGaramond-Italic', sans-serif;
+$font-family: 'GaramondPremrPro', sans-serif;
+$font-family-it: 'GaramondPremrPro-It' , sans-serif;
 $second-font: 'Oswald-Regular', sans-serif;
 
 // Main Typography variables
-$font-size: 14px;
+$font-size: 20px;
 $font-weight: 400; // Regular
 $line-height: 1.2;
 
 // Custom Container setting
 $container-padding: 15px;
-$container-width: 1180px + $container-padding * 2;
+$container-width: 1150px + $container-padding * 2;
 
 //Breakpoints variables
 // $screen-xs: 0;

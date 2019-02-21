@@ -1,0 +1,35 @@
+.subscribe{
+  margin: 0 auto;
+  border-top: 2px solid $border-main-color;
+  border-bottom: 2px solid $border-main-color;
+  max-width: 650px;
+  width: 100%;
+  padding: 3px 10px;
+  margin-bottom: 100px;
+
+  &__inner {
+    border-top: 1px solid $border-main-color;
+    border-bottom: 1px solid $border-main-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 48px;
+    label{display: none}
+  }
+
+  &__mail{
+    font-size: 20px;
+    border: transparent;
+        &::placeholder{
+      padding: 0;
+      font-size: 20px;
+    }
+  }
+}
+
+.form_focus {
+  border-color: $border-second-color;
+}
+
+

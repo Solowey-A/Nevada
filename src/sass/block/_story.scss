@@ -11,11 +11,10 @@
   }
 
   &__subtitle{
-    color: #666666;
-    font-family: $font-family;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     text-align: center;
+    color: $second-color;
   }
 }

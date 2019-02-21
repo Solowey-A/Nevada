@@ -9,10 +9,16 @@
 
 @import 'elements/form-elements';
 @import 'elements/buttons';
+@import 'elements/social';
 
 @import 'block/header';
 @import 'block/footer';
 @import 'block/wrapper';
 @import 'block/story';
+@import 'block/instaphoto.scss';
+@import 'block/subscribe.scss';
+@import 'block/meet';
+@import 'block/contacts';
+
 
 @import 'pages/home';

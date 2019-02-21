@@ -1,13 +1,55 @@
-// Buttons
-.btn {
+// subscribe Buttons in form
+.subscribe__btn {
   display: inline-block;
-  vertical-align: middle;
-  background: none;
-  outline: 0 none;
-  border: 0 none;
-  border-radius: 0;
+  color: #333333;
   padding: 8px 25px;
-  background-color: #000;
-  text-transform: uppercase;
-  color: #fff;
+  transition: 0.3s;
+
+
+  &:hover{
+    color: #781241;
+  }
+
+  &--subscribe{
+    font-family: $second-font;
+    text-transform: uppercase;
+    color: #333333;
+    max-width: 150px;
+    width: 100%;
+    text-align: right;
+    padding: 15px 0;
+    position: relative;
+    font-size: 15px;
+    transition: 0.3s;
+
+    &:before{
+      content: '';
+      display: inline-block;
+      background-color: #333333;
+      padding: 0.1px;
+      height: 55px;
+      position: absolute;
+      left: 0;
+      top: -4px;
+    }
+
+    &:after{
+      display: inline-block;
+      content: '';
+      background: url('../images/main/right_arow.png') no-repeat right center;
+      padding: 6px;
+      margin-left: 35px;
+    }
+
+    &:hover{
+      color: #781241;
+
+      &:after{
+        background: url('../images/main/right_arow_hover.png') no-repeat right center;
+      }
+    }
+  }
 }
+
+
+

@@ -3,12 +3,12 @@
   max-width: $container-width;
   position: absolute;
   top: 40px;
-  &__nav{
+
+  .nav{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: red;
     font-family: $second-font;
     font-size: 20px;
     font-weight: 400;
@@ -16,12 +16,13 @@
     max-width: 500px;
     width: 100%;
     transition: 3s ease;
-    &--item{
+
+    &__item{
       padding: 2px;
       border-bottom: 2px solid transparent;
       transition: 0.3s;
       &:hover{
-        border-bottom: 2px solid #ffffff;
+        border-bottom: 2px solid $link-color;
       }
     }
 

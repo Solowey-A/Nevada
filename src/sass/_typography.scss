@@ -1,14 +1,31 @@
 //  Include fonts
 
-// font-family: 'CormorantGaramond';
+// font-family: 'GaramondPremrPro-It';
 @font-face {
-  font-family: 'CormorantGaramond-Italic';
-  src: url('../fonts/CormorantGaramond-Italic.eot?#iefix')
+  font-family: 'GaramondPremrPro-It';
+  src: url('../fonts/GaramondPremrPro-It.eot?#iefix')
   format('embedded-opentype'),
-  url('../fonts/CormorantGaramond-Italic.woff') format('woff'),
-  url('../fonts/CormorantGaramond-Italic.ttf')  format('truetype'),
-  url('../fonts/CormorantGaramond-Italic.svg#CormorantGaramond-Italic')
+  url('../fonts/GaramondPremrPro-It.otf')
+  format('opentype'),
+  url('../fonts/GaramondPremrPro-It.woff')
+  format('woff'), url('../fonts/GaramondPremrPro-It.ttf')
+  format('truetype'), url('../fonts/GaramondPremrPro-It.svg#GaramondPremrPro-It')
   format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// font-family: 'GaramondPremrPro';
+@font-face {
+  font-family: 'GaramondPremrPro';
+  src: url('../fonts/GaramondPremrPro.eot?#iefix')
+  format('embedded-opentype'),
+  url('../fonts/GaramondPremrPro.otf')
+  format('opentype'),
+  url('../fonts/GaramondPremrPro.woff')
+  format('woff'), url('../fonts/GaramondPremrPro.ttf')
+  format('truetype'),
+  url('../fonts/GaramondPremrPro.svg#GaramondPremrPro') format('svg');
   font-weight: normal;
   font-style: normal;
 }

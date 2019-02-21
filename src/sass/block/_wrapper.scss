@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   height: 722px;
+
   &__banner {
     background: url(../images/main/main_bg.jpg) no-repeat center, center / cover;
     height: 722px;
@@ -15,8 +16,8 @@
     width: 100%;
     z-index: -1;
     margin-bottom: 10px;
-
   }
+
   &__logo{
     width: 395px;
     height: 235px;
@@ -25,11 +26,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     .logo-item{
-      border: 2px solid #781241;
+      border: 2px solid $border-second-color;
       padding: 35px 60px;
     }
-
-
   }
 }
