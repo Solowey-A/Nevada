@@ -1,13 +1,10 @@
 .header {
   width: 100%;
-  z-index: 1;
   max-width: $container-width;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  position: relative;
+  position: absolute;
+  top: 40px;
   &__nav{
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -18,19 +15,17 @@
     text-transform: uppercase;
     max-width: 500px;
     width: 100%;
+    transition: 3s ease;
+    &--item{
+      padding: 2px;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
+      &:hover{
+        border-bottom: 2px solid #ffffff;
+      }
+    }
 
   }
-
-  &__logo{
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    
-
-
-
-  }
-
 
 }
 

@@ -23,11 +23,6 @@ body {
 a {
   color: $link-color;
   text-decoration: none;
-
-  &:hover,
-  &:active {
-    color: $link-color--hover;
-  }
 }
 
 img {
@@ -51,22 +46,4 @@ section {
 .icon {
   display: inline-block;
 }
-.wrapper {
-  z-index: 0;
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 0;
-  height: 722px;
-  .banner {
-    background: url(../images/main/main_bg.jpg) no-repeat center, center / cover;
-    height: 722px;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    width: 100%;
 
-  }
-}
