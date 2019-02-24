@@ -11,6 +11,7 @@
 @import 'elements/buttons';
 @import 'elements/social';
 
+
 @import 'block/header';
 @import 'block/footer';
 @import 'block/wrapper';
@@ -19,6 +20,14 @@
 @import 'block/subscribe.scss';
 @import 'block/meet';
 @import 'block/contacts';
+@import 'block/product';
+@import 'block/publications';
+@import 'block/almanac';
+@import 'block/events_details';
 
+@import 'pages/wines';
+@import 'pages/media';
+@import 'pages/events';
+@import 'pages/contact';
+@import 'pages/details';
 
-@import 'pages/home';

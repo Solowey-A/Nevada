@@ -9,3 +9,9 @@ $('.subscribe').addEventListener('focus', function () {
 $('.subscribe').addEventListener('blur', function () {
   this.classList.remove('form_focus');
 }, true);
+
+
+
+
+
+

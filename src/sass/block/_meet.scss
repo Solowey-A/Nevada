@@ -1,9 +1,7 @@
 .meet{
   background: url(../images/main/meet_bg.jpg) no-repeat center, center / cover;
-  height: 430px;
-  max-width: $container-width;
+  min-height: 430px;
   width: 100%;
-  margin: 0 auto;
   position: relative;
   z-index: -1;
   display: flex;
@@ -25,17 +23,6 @@
     border: 2px solid $border-second-color;
     height: 100%;
     padding: 25px;
-  }
-
-  &__title{
-    text-transform: uppercase;
-  }
-
-  &__subtitle{
-    color: $second-color;
-    font-family: $font-family-it;
-    font-size: 20px;
-    line-height: 30px;
   }
 }
 

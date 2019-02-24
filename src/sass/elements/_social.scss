@@ -1,38 +1,39 @@
 .social{
-  width: 250px;
-  height: 25px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   &__twitter{
-    background: url(../images/social/twitter.png) no-repeat center, center / cover;
-    width: 28px;
-    height: 23px;
-    margin: 0 10px;
+    height: 25px;
+    width: 25px;
+    color: $social-main;
+    transition: 0.3s;
 
     &:hover{
-      background: url(../images/social/twitter_hover.png) no-repeat center, center / cover;
+      color: $social-hover;
     }
   }
 
   &__instagram{
-    background: url(../images/social/instagram.png) no-repeat center, center / cover;
-    width: 28px;
-    height: 23px;
-    margin: 0 10px;
+    height: 25px;
+    width: 25px;
+    color: $social-main;
+    transition: 0.3s;
 
     &:hover{
-      background: url(../images/social/instagram_hover.png) no-repeat center, center / cover;
+      color: $social-hover;
     }
   }
+
   &__facebook{
-    background: url(../images/social/facebook.png) no-repeat center, center / cover;
-    width: 28px;
-    height: 23px;
-    margin: 0 10px;
+    height: 25px;
+    width: 25px;
+    color: $social-main;
+    transition: 0.3s;
+
     &:hover{
-      background: url(../images/social/facebook_hover.png) no-repeat center, center / cover;
+      color: $social-hover;
     }
   }
-}
 
+}

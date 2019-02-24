@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Page Title</title>
+	<title>NevadaSunset</title>
 	<meta name="description" content="">
 	@@include('_include/head.html')
 </head>
@@ -11,17 +11,17 @@
 
 <div class="wrapper">
   @@include('_include/header.html')
-  <div class="wrapper__banner"></div>
 
   <a href="#" class="wrapper__logo">
     <img src="images/main/logo.jpg" alt="logo" class="logo-item">
   </a>
 </div>
-  <section class="story">
+<div class="page-container">
+<section class="story">
 
-    <h2 class="story__title">our story</h2>
+    <h2 class="main-title">our story</h2>
 
-    <p class="story__subtitle">
+    <p class="main-subtitle centered-text">
       Lorem ipsum dolor sit amet, consectetuer adipisc ing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
       Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipisc ing elit, sed diam
       nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor
@@ -49,14 +49,14 @@
 <div class="subscribe">
 <form class="subscribe__inner">
   <label for="mail"></label><input required type="email" placeholder="Enter your e-mail" class="subscribe__mail" id="mail">
-  <a href="#" class="subscribe__btn--subscribe">subscribe</a>
+  <a href="#" class="btn_arrow--subscribe">subscribe<i class="fas fa-chevron-right"></i></a>
 </form>
 </div>
 <div class="meet">
 <div class="meet__wrap">
   <div class="meet__inner">
-    <h2 class="meet__title">meet us</h2>
-    <p class="meet__subtitle">
+    <h2 class="main-title">meet us</h2>
+    <p class="second-subtitle">
       Lorem ipsum dolor sit amet, consectetuer
       dipisc ing elit, sed diam nonummy nibh
       euismod tincidunt ut laoreet.
@@ -64,30 +64,13 @@
   </div>
 </div>
 </div>
-<div class="contacts">
-<div class="contacts__inner">
-  <div class="contacts__item">
-    <h2 class="contacts__title">nevada sunset winery:</h2>
-    <p class="contacts__subtitles">415 East 4th Street, Suite B, Reno, NV 89512</p>
-  </div>
 
-  <div class="contacts__item--contact">
-    <h2 class="contacts__title">contact:</h2>
-    <p class="contacts__subtitles">alynn@nevadasunsetwinery.com</p>
-  </div>
-
-  <div class="contacts__item">
-    <h2 class="contacts__title">connect:</h2>
-    <div class="social">
-      <a href="#" class="social__twitter"></a>
-      <a href="#" class="social__instagram"></a>
-      <a href="#" class="social__facebook"></a>
-    </div>
-  </div>
-</div>
-</div>
-
+  @@include('_include/contacts.html')
 	@@include('_include/footer.html')
+</div>
+
 	@@include('_include/inc_script.html')
+  @@include('_include/libs_js.html')
+
 </body>
 </html>

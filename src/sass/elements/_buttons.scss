@@ -1,55 +1,59 @@
 // subscribe Buttons in form
-.subscribe__btn {
-  display: inline-block;
-  color: #333333;
-  padding: 8px 25px;
+.btn_arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: $third-color;
   transition: 0.3s;
-
-
-  &:hover{
-    color: #781241;
-  }
+  font-family: $second-font;
+  text-transform: uppercase;
+  width: 110px;
+  font-size: $fourth-font-size;
+  position: relative;
+  align-self: flex-end;
+  justify-self: flex-end;
+  padding: 10px;
 
   &--subscribe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $third-color;
+    transition: 0.3s;
     font-family: $second-font;
     text-transform: uppercase;
-    color: #333333;
-    max-width: 150px;
-    width: 100%;
-    text-align: right;
+    text-align: center;
+    width: 225px;
     padding: 15px 0;
     position: relative;
-    font-size: 15px;
-    transition: 0.3s;
+    font-size: $fourth-font-size;
 
     &:before{
       content: '';
-      display: inline-block;
-      background-color: #333333;
-      padding: 0.1px;
+      display: block;
+      background-color: $border-main-color;
+      padding: 0.5px;
       height: 55px;
       position: absolute;
       left: 0;
       top: -4px;
     }
-
-    &:after{
-      display: inline-block;
-      content: '';
-      background: url('../images/main/right_arow.png') no-repeat right center;
-      padding: 6px;
-      margin-left: 35px;
-    }
-
     &:hover{
-      color: #781241;
-
-      &:after{
-        background: url('../images/main/right_arow_hover.png') no-repeat right center;
-      }
+      color: $text-color;
     }
   }
+
+  &:hover{
+    color: $text-color;
+  }
+
 }
 
-
+.fa-chevron-right{
+  position: absolute;
+  right: 0;
+  font-size: 13px;
+}
 

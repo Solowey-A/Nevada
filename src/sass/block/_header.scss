@@ -1,8 +1,10 @@
 .header {
   width: 100%;
   max-width: $container-width;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
   position: absolute;
-  top: 40px;
+  top: 38px;
 
   .nav{
     margin: 0 auto;
@@ -10,7 +12,7 @@
     flex-direction: row;
     justify-content: space-around;
     font-family: $second-font;
-    font-size: 20px;
+    font-size: $font-size;
     font-weight: 400;
     text-transform: uppercase;
     max-width: 500px;
@@ -21,10 +23,18 @@
       padding: 2px;
       border-bottom: 2px solid transparent;
       transition: 0.3s;
+      position: relative;
+
       &:hover{
         border-bottom: 2px solid $link-color;
       }
+
     }
+    .active{
+      border-bottom: 2px solid $link-color;
+
+    }
+
 
   }
 
