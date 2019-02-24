@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   &__wrapper{
-    padding: 50px 0 100px;
+    padding: 50px 0 130px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -25,9 +25,26 @@
     max-width: 768px;
     width: 100%;
     border-top: 1px solid $border-main-color;
-    display: flex;
-    flex-direction: row;
     padding-top: 30px;
+  }
+  &__date{
+    height: 75px;
+    width: 75px;
+    background-color: $third-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    float: left;
+    margin: 0 15px 15px 0;
+  }
+  &__image{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 10px;
   }
 }
 
