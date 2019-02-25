@@ -11,9 +11,6 @@ $('.subscribe').addEventListener('blur', function () {
 }, true);
 
 
-function $(selector) {
-  return document.querySelector(selector);
-}
 
 
 

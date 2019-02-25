@@ -83,7 +83,17 @@ select {
   font-family: $font-family;
   border-bottom: 1px solid $border-fourth-color;
   width: 100%;
+
 }
+
+#email:invalid:not(:focus):not(:placeholder-shown) {
+  background: #ff857b;
+  & + .email {
+    font-size:$fifth-font-size;
+    color:$fifth-color;
+    font-family: $font-family;
+    top: 0;
+  }}
 
 #subject:focus ~ .subject, #subject:valid ~ .subject {
   top: 0;

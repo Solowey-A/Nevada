@@ -7,9 +7,10 @@
     "addJs": [
       "./node_modules/jquery/dist/jquery.min.js",
       "./node_modules/popper.js/dist/umd/popper.min.js",
+      "./src/node_modules/masonry-layout/dist/masonry.pkgd.js",
       "./src/libs/js/all.min.js",
       "./src/libs/js/active.js",
-      "./src/libs/js/focus.js"
+      "./node_modules/masonry-layout/dist/masonry.pkgd.min.js"
 
     ],
     "addCss": [

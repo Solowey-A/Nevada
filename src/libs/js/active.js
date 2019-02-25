@@ -7,3 +7,12 @@ for(i=0;i<el.length; i++){
     el[i].className="active"; // добавляем нужный класс для выделения пункта
   }
 }
+
+$(window).on('load', function(){
+  $('#container').masonry({
+    // options...
+    itemSelector: '.item',
+    columnWidth: 557
+
+  });
+});
