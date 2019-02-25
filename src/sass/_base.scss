@@ -96,6 +96,30 @@ section {
   color: $second-color;
   line-height: 30px;
 }
+
+// Garamond pro / 14px / for form labels
+.hint_focus{
+  font-size: $fifth-font-size;
+  font-family: $font-family;
+  color: $fifth-color;
+  line-height: 30px;
+}
+
+// Garamond pro / 20px / for form labels
+.hint{
+  font-size: $font-size;
+  font-family: $font-family;
+  color: $fifth-color;
+  line-height: 30px;
+}
+
+// Garamond pro / 16px / another colour
+.hours{
+  font-size: $second-font-size;
+  font-family: $font-family;
+  color: $third-color;
+  line-height: 30px;
+}
 // Garamond pro it / 20px /
 .second-subtitle{
   color: $second-color;

@@ -1,0 +1,22 @@
+.contact{
+  &__form{
+    position: relative;
+    width: 100%;
+    min-height: 730px;
+    background: url("../images/contact/form_bg.jpg") no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__form_inner{
+    width: 514px;
+    height: 527px;
+    background-color: $fourth-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

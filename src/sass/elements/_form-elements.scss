@@ -16,5 +16,91 @@ select {
 
 }
 
+.main__form{
+  border: 2px solid #781241;
+  min-height: 500px;
+  max-width: 488px;
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-item{
+  height: 53px;
+  position: relative;
+}
+
+.name, .email, .subject{
+  position: absolute;
+  bottom: 0;
+
+}
+
+#name, #subject, #email{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  border: transparent;
+  border-bottom: 1px solid $border-third-color;
+
+
+}
+
+.message-wrap{
+  height: 153px;
+  position: relative;
+}
+.message{
+  position: absolute;
+  top: 21px;
+}
+#message{
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  border: transparent;
+  border-bottom: 1px solid $border-third-color;
+
+}
+
+
+#name:focus ~ .name, #name:valid ~ .name {
+  top: 0;
+  font-size:$fifth-font-size;
+  color:$fifth-color;
+  font-family: $font-family;
+  border-bottom: 1px solid $border-fourth-color;
+  width: 100%;
+}
+
+#email:focus ~ .email, #email:valid ~ .email {
+  top: 0;
+  font-size:$fifth-font-size;
+  color:$fifth-color;
+  font-family: $font-family;
+  border-bottom: 1px solid $border-fourth-color;
+  width: 100%;
+}
+
+#subject:focus ~ .subject, #subject:valid ~ .subject {
+  top: 0;
+  font-size:$fifth-font-size;
+  color:$fifth-color;
+  font-family: $font-family;
+  border-bottom: 1px solid $border-fourth-color;
+  width: 100%;
+}
+
+#message:focus ~ .message, #message:valid ~ .message {
+  top: 0;
+  font-size:$fifth-font-size;
+  color:$fifth-color;
+  font-family: $font-family;
+  border-color: $border-fourth-color;
+  width: 100%;
+}
 
 
