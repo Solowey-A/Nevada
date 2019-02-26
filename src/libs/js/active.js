@@ -18,6 +18,7 @@ $(window).on('load', function(){
 });
 
 
+//map
 function initMap(){
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 8,
@@ -30,7 +31,6 @@ function initMap(){
   });
 }
 
-//map
 function geocodeAddress(geocoder, resultsMap) {
   var address = document.getElementById('address').value;
   geocoder.geocode({'address': address}, function(results, status) {

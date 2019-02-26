@@ -27,11 +27,11 @@
     position: absolute;
     font-size: $font-size;
     color: $third-color;
-    bottom: 257px;
+    bottom: 142px;
     right: 530px;
 
   }
-  &#map{
+  #map{
     position: absolute;
     top: 0;
     left: 0;
@@ -46,7 +46,7 @@
     border: 2px solid $third-color;
     position: absolute;
     right: 270px;
-    bottom: 307px;
+    bottom: 192px;
     background-color: $fourth-color;
     display: flex;
     flex-direction: column;
