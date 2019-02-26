@@ -13,7 +13,7 @@ select {
   background: none;
   outline: 0 none;
   background-color: #fff;
-
+  transition: all 0.5s ease-in-out;
 }
 
 .main__form{
@@ -25,6 +25,7 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .form-item{
@@ -35,10 +36,11 @@ select {
 .name, .email, .subject{
   position: absolute;
   bottom: 0;
+  transition: all 0.5s ease-in-out;
 
 }
 
-#name, #subject, #email{
+.form__field{
   padding: 0;
   margin: 0;
   position: absolute;
@@ -46,12 +48,12 @@ select {
   border: transparent;
   border-bottom: 1px solid $border-third-color;
 
-
 }
 
 .message-wrap{
   height: 153px;
   position: relative;
+  margin-bottom: 35px;
 }
 .message{
   position: absolute;
@@ -63,27 +65,30 @@ select {
   bottom: 0;
   border: transparent;
   border-bottom: 1px solid $border-third-color;
-
+  resize: none;
+  margin-bottom: 20px;
 }
 
 
-#name:focus ~ .name, #name:valid ~ .name {
-  top: 0;
+.form__field:focus ~ .name, .form__field:valid ~ .name{
+  bottom: 50%;
   font-size:$fifth-font-size;
   color:$fifth-color;
-  font-family: $font-family;
+  &:focus{
   border-bottom: 1px solid $border-fourth-color;
   width: 100%;
+  }
 }
 
-#email:focus ~ .email, #email:valid ~ .email {
-  top: 0;
+.form__field:focus ~ .email, .form__field:valid ~ .email {
+  bottom: 50%;
   font-size:$fifth-font-size;
   color:$fifth-color;
-  font-family: $font-family;
+  &:focus{
   border-bottom: 1px solid $border-fourth-color;
   width: 100%;
 
+  }
 }
 
 #email:invalid:not(:focus):not(:placeholder-shown) {
@@ -95,22 +100,24 @@ select {
     top: 0;
   }}
 
-#subject:focus ~ .subject, #subject:valid ~ .subject {
-  top: 0;
+.form__field:focus ~ .subject, .form__field:valid ~.subject{
+  bottom: 50%;
   font-size:$fifth-font-size;
   color:$fifth-color;
-  font-family: $font-family;
-  border-bottom: 1px solid $border-fourth-color;
-  width: 100%;
+  &:focus{
+    border-bottom: 1px solid $border-fourth-color;
+    width: 100%;
+
+  }
 }
 
 #message:focus ~ .message, #message:valid ~ .message {
   top: 0;
   font-size:$fifth-font-size;
   color:$fifth-color;
-  font-family: $font-family;
   border-color: $border-fourth-color;
   width: 100%;
+  transition: all 0.5s ease-in-out;
 }
 
 

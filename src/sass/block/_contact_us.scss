@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
-  max-width: $container-s-width;
-  width: 100%;
+  width: $container-s-width;
+
 
   &__description{
     display: flex;
@@ -16,19 +16,28 @@
 
   &__map{
     position: relative;
-    max-width: 1140px;
     width: 100%;
-    padding: 100px 0 115px 0;
+    margin: 100px 0 115px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+    height: 430px;
+    }
   &__marker{
     position: absolute;
     font-size: $font-size;
     color: $third-color;
     bottom: 257px;
     right: 530px;
+
+  }
+  &#map{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 1140px;
+    width: 100%;
+    height: 430px;
   }
 
   &__hours{
@@ -44,6 +53,7 @@
     align-items: center;
     justify-content: center;
     padding: 31px;
+
   }
 
   .day_hours{

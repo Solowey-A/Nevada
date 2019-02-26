@@ -1,10 +1,12 @@
 .header {
-  width: 100%;
   max-width: $container-width;
   padding-left: $container-padding;
   padding-right: $container-padding;
   position: absolute;
   top: 38px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
 
   .nav{
     margin: 0 auto;
@@ -15,8 +17,7 @@
     font-size: $font-size;
     font-weight: 400;
     text-transform: uppercase;
-    max-width: 500px;
-    width: 100%;
+    width: 455px;
     transition: 3s ease;
 
     &__item{
