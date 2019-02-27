@@ -50,6 +50,17 @@ section {
   flex-direction: column;
   align-items: center;
 }
+
+.page-s-container{
+  max-width: $container-s-width;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 // oswald / 20px /
 .main-title{
   font-family: $second-font;

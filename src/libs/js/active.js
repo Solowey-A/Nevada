@@ -12,8 +12,6 @@ $(window).on('load', function(){
   $('#container').masonry({
     // options...
     itemSelector: '.item',
-    columnWidth: 557
-
   });
 });
 
@@ -45,3 +43,9 @@ function geocodeAddress(geocoder, resultsMap) {
     }
   });
 }
+
+
+$(".menu__hidden").click(function() {
+  // assumes element with id='button'
+  $("#checked").toggle();
+});

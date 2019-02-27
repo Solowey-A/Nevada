@@ -3,7 +3,7 @@ $body-bg: #fff;
 $text-color: #333333;
 $second-color: #666666;
 $third-color: #781241;
-$fourth-color: #ffffff;
+$fourth-color: #970309;
 $fifth-color: #adadad;
 
 $border-main-color: #666666;
@@ -37,7 +37,8 @@ $line-height: 1.2;
 // Custom Container setting
 $container-padding: 15px;
 $container-width: 1180px + $container-padding * 2;
-$container-s-width: 1140px;
+$container-s-width: 1140px + $container-padding * 2;
+
 
 
 
@@ -45,5 +46,5 @@ $container-s-width: 1140px;
 // $screen-xs: 0;
 // $screen-sm: 480px;
 // $screen-md: 768px;
-// $screen-lg: 992px;
+$screen-lg: 992px;
 // $screen-xl: 1200px;

@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
-  width: $container-s-width;
-
+  width: 100%;
 
   &__description{
     display: flex;
@@ -38,6 +37,7 @@
     max-width: 1140px;
     width: 100%;
     height: 430px;
+
   }
 
   &__hours{
