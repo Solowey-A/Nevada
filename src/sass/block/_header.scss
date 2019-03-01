@@ -8,50 +8,53 @@
   left: 50%;
   transform: translateX(-50%);
 
-  .nav{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: $second-font;
-    font-size: $font-size;
-    font-weight: 400;
-    text-transform: uppercase;
-    width: 455px;
-    transition: 3s ease;
+}
 
-    @include max-w($screen-lg){
-      max-width: 700px;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-left: $container-padding;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      transform: translateX(-50%);
-    }
+.nav{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: $second-font;
+  font-size: $font-size;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 455px;
+  transition: 0.3s ease;
+  @include fluid-font(14px, 20px, 320px, 2560px);
 
-    &__item{
-      padding: 2px;
-      border-bottom: 2px solid transparent;
-      transition: 0.3s;
-      position: relative;
+  @include max-w($screen-lg){
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: $container-padding;
+    position: fixed;
+    top: -38px;
+    left: 0;
+    padding-top: 55px;
+    transform: translateX(-50%);
+    height: 100vh;
+  }
 
-      &:hover{
-        border-bottom: 2px solid $link-color;
-      }
 
-    }
-    .active{
+  &__item{
+    padding: 2px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+    position: relative;
+    &:hover{
       border-bottom: 2px solid $link-color;
-
     }
 
+  }
+  .active{
+    border-bottom: 2px solid $link-color;
 
   }
 
+
 }
+
 
 
 

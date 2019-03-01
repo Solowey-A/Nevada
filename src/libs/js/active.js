@@ -44,8 +44,26 @@ function geocodeAddress(geocoder, resultsMap) {
   });
 }
 
+let toggle_btn  = document.getElementById("toggle");
+let menu__hamburger = document.getElementById("toggle");
+let html__hide = document.getElementById("html--hidden");
 
-$(".menu__hidden").click(function() {
-  // assumes element with id='button'
-  $("#checked").toggle();
+
+
+toggle_btn.addEventListener("click", function() {
+  menu__hamburger.classList.toggle("menu__show");
+  html__hide.classList.toggle("html--hidden")
 });
+
+window.addEventListener("orientationchange", function() {
+  html__hide.classList.remove("html--hidden");
+  menu__hamburger.classList.remove("menu__show");
+}, false);
+
+
+
+
+
+
+
+

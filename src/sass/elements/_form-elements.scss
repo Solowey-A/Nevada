@@ -18,7 +18,7 @@ select {
 
 .main__form{
   border: 2px solid #781241;
-  min-height: 500px;
+  height: 500px;
   max-width: 488px;
   width: 100%;
   padding: 32px;
@@ -26,6 +26,12 @@ select {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  @include max-w($screen-sm){
+    width: 290px;
+    padding: 15px;
+    height: 445px;
+
+  }
 }
 
 .form-item{
@@ -54,6 +60,9 @@ select {
   height: 153px;
   position: relative;
   margin-bottom: 35px;
+  @include max-w($screen-sm){
+    margin: 0;
+  }
 }
 .message{
   position: absolute;
@@ -66,7 +75,11 @@ select {
   border: transparent;
   border-bottom: 1px solid $border-third-color;
   resize: none;
-  margin-bottom: 20px;
+
+  @include max-w($screen-sm){
+    margin: 0;
+  }
+
 }
 
 

@@ -15,9 +15,9 @@ body {
   color: $text-color;
   font-family: $font-family;
   font-weight: $font-weight;
-  font-size: $font-size;
   line-height: $line-height;
   position: relative;
+  @include fluid-font(14px, 20px, 320px, 2560px)
 }
 
 a {
@@ -64,28 +64,29 @@ section {
 // oswald / 20px /
 .main-title{
   font-family: $second-font;
-  font-size: $font-size;
   color: $text-color;
   font-weight: $font-weight;
   text-transform: uppercase;
   line-height: 30px;
   margin: 0;
+  @include fluid-font(16px, 20px, 320px, 2560px);
+
 }
 
 // oswald / 20px / white colour
 .main-title-light{
   font-family: $second-font;
-  font-size: $font-size;
   color: $fourth-color;
   font-weight: $font-weight;
   text-transform: uppercase;
   line-height: 30px;
   margin: 0;
+  @include fluid-font(16px, 20px, 320px, 2560px);
 }
 // Oswald / 16px /
 .second-title{
   font-family: $second-font;
-  font-size: $second-font-size;
+  @include fluid-font(14px, 20px, 320px, 2560px);
   font-weight: $font-weight;
   color: $text-color;
   text-transform: uppercase;
@@ -94,15 +95,26 @@ section {
 
 // Garamond pro / 20px /
 .main-subtitle{
-  font-size: $font-size;
   font-family: $font-family;
   color: $second-color;
   line-height: 30px;
+  @include fluid-font(16px, 20px, 320px, 2560px);
+  @include max-w($screen-sm){
+  clear: both;
+  }
+}
+// Garamond pro / 20px /
+.event__subtitle{
+  font-family: $font-family;
+  color: $second-color;
+  line-height: 30px;
+  @include fluid-font(16px, 20px, 320px, 2560px);
+
 }
 
 // Garamond pro / 16px /
 .date{
-  font-size: $second-font-size;
+  @include fluid-font(14px, 20px, 320px, 2560px);
   font-family: $font-family;
   color: $second-color;
   line-height: 30px;
@@ -110,7 +122,7 @@ section {
 
 // Garamond pro / 14px / for form labels
 .hint_focus{
-  font-size: $fifth-font-size;
+  @include fluid-font(14px, 20px, 320px, 2560px);
   font-family: $font-family;
   color: $fifth-color;
   line-height: 30px;
@@ -118,15 +130,15 @@ section {
 
 // Garamond pro / 20px / for form labels
 .hint{
-  font-size: $font-size;
   font-family: $font-family;
   color: $fifth-color;
   line-height: 30px;
+  @include fluid-font(16px, 20px, 320px, 2560px);
 }
 
 // Garamond pro / 16px / another colour
 .hours{
-  font-size: $second-font-size;
+  @include fluid-font(14px, 20px, 320px, 2560px);
   font-family: $font-family;
   color: $third-color;
   line-height: 30px;
@@ -135,21 +147,21 @@ section {
 .second-subtitle{
   color: $second-color;
   font-family: $font-family-it;
-  font-size: $font-size;
   line-height: 30px;
+  @include fluid-font(16px, 20px, 320px, 2560px);
 }
 // Garamond pro it / 16px /
 .third-subtitle{
   color: $second-color;
   font-family: $font-family-it;
-  font-size: $second-font-size;
+  @include fluid-font(14px, 20px, 320px, 2560px);
 }
 
 // Garamond pro Smbd / 18px / for price attributes
 .attribute{
   color: $text-color;
   font-family: $font-family-bold;
-  font-size: $third-font-size;
+  @include fluid-font(14px, 20px, 320px, 2560px);
 
 }
 //style for centered text
@@ -164,7 +176,13 @@ section {
 
 //for internet explorer
 .ex-subtitle{
-  width: 756px;
+  max-width: 756px;
+}
+.html--hidden{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
 }
 
 

@@ -5,12 +5,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include max-w($screen-lg){
+    padding-top: 50px;
+  }
   &__wrapper{
     padding: 50px 0 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include max-w($screen-lg){
+      justify-content: center;
+      padding: 25px 0 10px;
+    }
   }
   &__doings{
     max-width: 780px;
@@ -20,40 +27,52 @@
     flex-direction: column;
     align-items: center;
     padding-top: 3px;
+    @include max-w($screen-md){
+      padding: 3px 5px;
+    }
   }
 
   &__item{
     max-width: 768px;
     width: 100%;
     border-top: 1px solid $border-main-color;
-    display: flex;
-    flex-direction: row;
     padding-top: 30px;
     }
 
   &__date{
     width: 75px;
     height: 75px;
+    padding: 3px;
+    margin-right: 15px;
     background-color: $third-color;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    float: left;
     text-align: center;
+    @include max-w($screen-md){
+      float: left;
+    }
   }
 
   &__description{
-    padding-left: 15px;
-    height: 78px;
+    height: 60px;
     overflow: hidden;
-    max-width: 660px;
-  }
+    @include max-w($screen-md){
+      height: 110px;
+      margin-bottom: 25px;
+    }
+    }
 
 }
 .wrap__item{
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
+  @include max-w($screen-lg){
+    padding-bottom: 25px;
+  }
 }
 .calendar{
   padding-top: 3px;
@@ -63,6 +82,9 @@
   max-width: 295px;
   width: 100%;
   border-top: 2px solid $border-main-color;
+  @include max-w($screen-lg){
+    display: none;
+  }
   &:before{
     content: '';
     display: block;

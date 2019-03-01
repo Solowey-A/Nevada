@@ -6,21 +6,52 @@
   align-items: center;
   justify-content: center;
   height: 706px;
-  background: url(../images/main/main_bg.jpg) no-repeat center, center / cover;
+  background: url(../images/main/main_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
+  @include max-w($screen-lg){
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @include max-w($screen-md){
+    height: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+  @include max-w($screen-sm){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
   &__logo{
-    width: 395px;
+    max-width: 395px;
     height: 235px;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0 3px;
+    @include max-w($screen-sm){
+
+      height: 106px;
+    }
 
     .logo-item{
       border: 2px solid $border-second-color;
       padding: 33px 58px;
       height: 223px;
+      @include max-w($screen-sm){
+
+        height: 100px;
+      }
     }
   }
 }

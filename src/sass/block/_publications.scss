@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include max-w($screen-lg){
+    padding: 50px 0 0;
+  }
 
 
 }
@@ -13,26 +16,43 @@
   align-items: center;
   width: 100%;
   padding: 50px 0;
+  @include max-w($screen-lg){
+    padding: 25px 0;
+  }
 
 
 
   &__post{
-    border-top: 2px solid $border-main-color;
-    max-width: 547px;
-    width: 100%;
+    max-width: 555px;
+    width: 50%;
     padding: 2px 4px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    position: relative;
+    @include max-w($screen-md){
+      max-width: 768px;
+      width: 100%;
+    }
 
     &:before{
       content: '';
       display: block;
       border-top: 1px solid $border-main-color;
       padding-bottom: 30px;
-      max-width: 547px;
-      width: 100%;
-      margin: 0 auto;
+      width: 96%;
+      align-self: center;
+
+      }
+    &:after {
+      content: '';
+      display: block;
+      border-top: 2px solid $border-main-color;
+      border-top: 2px solid $border-main-color;
+      width: 99%;
+      position: absolute;
+      top: -4px;
+      align-self: center;
     }
   }
   &__image{

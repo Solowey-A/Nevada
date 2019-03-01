@@ -5,6 +5,9 @@
   width: 100%;
   padding: 3px 10px;
   margin-bottom: 100px;
+  @include max-w($screen-sm){
+    margin-bottom: 50px;
+  }
 
   &__inner {
     border-top: 1px solid $border-main-color;
