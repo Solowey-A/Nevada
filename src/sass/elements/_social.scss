@@ -1,13 +1,18 @@
 .social{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 78px;
+  width: 100%;
+  font-size: 23px;
 
   &__twitter{
     height: 25px;
     width: 25px;
     color: $social-main;
     transition: 0.3s;
+    margin-right: 3px;
+
 
     &:hover{
       color: $social-hover;

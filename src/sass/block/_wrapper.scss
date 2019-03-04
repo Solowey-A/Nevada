@@ -41,7 +41,7 @@
     padding: 0 3px;
     @include max-w($screen-sm){
 
-      height: 106px;
+      height: 110px;
     }
 
     .logo-item{
@@ -49,8 +49,8 @@
       padding: 33px 58px;
       height: 223px;
       @include max-w($screen-sm){
-
-        height: 100px;
+        padding: 20px 33px;
+        height: 106px;
       }
     }
   }

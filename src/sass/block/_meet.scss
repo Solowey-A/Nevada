@@ -27,7 +27,7 @@
     @include max-w($screen-sm){
       max-width: 480px;
       padding: 15px 0;
-      height: 444px;
+      max-height: 444px;
     }
   }
 

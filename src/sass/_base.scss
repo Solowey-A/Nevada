@@ -152,9 +152,11 @@ section {
 }
 // Garamond pro it / 16px /
 .third-subtitle{
-  color: $second-color;
+  color: $text-color;
   font-family: $font-family-it;
-  @include fluid-font(14px, 20px, 320px, 2560px);
+  width: 100%;
+  @include fluid-font(14px, 18px, 320px, 2560px);
+
 }
 
 // Garamond pro Smbd / 18px / for price attributes
